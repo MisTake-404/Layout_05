@@ -1,0 +1,149 @@
+/*Верх страницы (перед шапкой)*/
+body{
+  background-color: #F9F9F9;
+  margin: 0;
+}
+.fix-contianer{
+  width: 1000px;
+  margin: 0 auto;
+}
+.top{
+  background-color: #00122F;
+  color: #fff;
+}
+.top1{
+  display: flex;
+  justify-content: space-between;
+}
+.top p{
+  margin: 0;
+  padding: 25px 0;
+  font-size: 16px;
+}
+.top a{
+  color: #fff;
+  font-size: 16px;
+}
+
+
+
+/*Шапка*/
+header{
+  background-color: #FFF;
+  height: 100px;
+  padding: 40px 0;
+  box-shadow:0px 0px 100px 0px rgba(0,0,0,0.21);
+  -webkit-box-shadow:0px 0px 100px 0px rgba(0,0,0,0.21);
+  -moz-box-shadow:0px 0px 100px 0px rgba(0,0,0,0.21);
+}
+.header1{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo h1{
+  margin: 0;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.header1 input{
+  background-color: #F3F3F3;
+  border: 0;
+  border-radius: 10px;
+  width: 250px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  color: #B4B4B7;
+}
+nav a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+
+
+/*Главная часть (боковое меню)*/
+main{
+  display: flex;
+  justify-content:space-between;
+  margin: 20px 0;
+}
+aside{
+  background-color: #fff;
+  width: 250px;
+  box-shadow:0px 0px 100px 0px rgba(0,0,0,0.21);
+  -webkit-box-shadow:0px 0px 100px 0px rgba(0,0,0,0.21);
+  -moz-box-shadow:0px 0px 100px 0px rgba(0,0,0,0.21);
+}
+aside h2{
+  margin: 30px 20px;
+  font-size: 20px;
+}
+aside hr{
+  margin: 0;
+  font-size: 20px;
+  background-color: #E5E5E5;
+}
+aside p{
+  margin: 30px 20px;
+  font-size: 14px;
+}
+aside a{
+  display: block;
+  margin: 20px auto;
+  font-size: 16px;
+  border: 1px solid #448CCB;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  color: #448CCB;
+}
+/*Оснвной новостной блок*/
+article{
+  height: 100px;
+  width: 450px;
+}
+.littleNew{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.littleNewBlock{
+  width: 50%;
+}
+.gray{
+  color: #B4B4B7;
+}
+/*Реклама*/
+.banners{
+  background-color: #000;
+  height: 100px;
+  width: 250px;
+}
+
+
+
+/*Блок самых читаемых новостей*/
+section{
+  background-color: #fff;
+  display: flex;
+}
+.most-read-news p, .most-read-news h2{
+  padding-left: 20px;
+}
+
+
+/*Подвал страницы*/
+footer{
+  background-color: orange;
+  height: 100px;
+}
