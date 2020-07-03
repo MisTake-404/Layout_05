@@ -39,6 +39,7 @@ header{
 .header1{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo{
   display: flex;
@@ -51,10 +52,14 @@ header{
   margin-left: 10px;
 }
 .header1 input{
-  background-color: #F3F3F3;
-  border: 0;
-  border-radius: 10px;
+  border: 1px solid #F3F3F3;
+  border-radius: 15px;
   width: 250px;
+  height: 30px;
+  background: url(img/search.png) no-repeat;
+  background-position: 95%;
+  background-size: auto 50%;
+  background-color: #F3F3F3;
 }
 nav{
   display: flex;
@@ -107,6 +112,25 @@ aside a{
   text-align: center;
   color: #448CCB;
 }
+.i{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+.i p{
+  margin: 0;
+}
+.i_1{
+  padding-left: 15px;
+  background: url(img/i_1.png) no-repeat;
+  background-position: 0% 40%;
+}
+.i_2{
+  padding-left: 15px;
+  background: url(img/i_2.png) no-repeat;
+  background-position: 0% 40%;
+}
 /*Оснвной новостной блок*/
 article{
   height: 100px;
@@ -118,10 +142,13 @@ article{
   justify-content: space-between;
 }
 .littleNewBlock{
-  width: 50%;
+  width: 49%;
 }
 .gray{
   color: #B4B4B7;
+}
+.i0{
+  margin: 0;
 }
 /*Реклама*/
 .banners{
@@ -136,6 +163,7 @@ article{
 section{
   background-color: #fff;
   display: flex;
+  margin: 20px 0;
 }
 .most-read-news p, .most-read-news h2{
   padding-left: 20px;
@@ -144,6 +172,42 @@ section{
 
 /*Подвал страницы*/
 footer{
-  background-color: orange;
-  height: 100px;
+  background-color: #00122F;
+}
+.footer1{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+footer nav a, footer h1{
+  color: #fff;
+}
+footer a{
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.naw{
+  display: flex;
+  justify-content: space-between;
+}
+footer nav{
+  flex-direction: column;
+  margin: 0;
+  width: 40%;
+}
+.info .logo{
+  margin-bottom: 20px;
+}
+.info a{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.dotInf p{
+  color: #fff;
+  font-weight: bold;
 }
