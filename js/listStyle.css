@@ -1,0 +1,57 @@
+body{
+  background-color: #F5F5F5;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial;
+}
+main{
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+.listWork, .addWork{
+  width: 470px;
+}
+.addWork{
+  width: 470px;
+}
+.newWork{
+  padding: 20px;
+  background-color: #fff;
+}
+input, textarea{
+  background-color: #F9F9F9;
+  border: 1px solid #EBEBEB;
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px 0;
+}
+label{
+  color: #8993AD;
+  font-size: 16px;
+}
+textarea{
+  width: 95%;
+}
+.newWork button{
+  background-color: #2174FD;
+  padding: 20px 50px;
+  color: white;
+  border: 0;
+  font-size: 16px;
+}
+li{
+  position: relative;
+}
+.delete{
+  text-align: right;
+  position: absolute;
+  background-color: red;
+  border: 0;
+  padding: 5px;
+  right: 0px;
+  top: 0px;
+}

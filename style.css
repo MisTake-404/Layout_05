@@ -30,7 +30,6 @@ body{
 /*Шапка*/
 header{
   background-color: #FFF;
-  height: 100px;
   padding: 40px 0;
   box-shadow:0px 0px 100px 0px rgba(0,0,0,0.21);
   -webkit-box-shadow:0px 0px 100px 0px rgba(0,0,0,0.21);
@@ -40,6 +39,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .logo{
   display: flex;
@@ -60,12 +60,18 @@ header{
   background-position: 95%;
   background-size: auto 50%;
   background-color: #F3F3F3;
+  position: absolute;
+  right: 0;
+}
+.menu_icon{
+  display: none;
 }
 nav{
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
   color: #B4B4B7;
+  flex-wrap: wrap;
 }
 nav a{
   text-decoration: none;
@@ -78,6 +84,7 @@ nav a{
 main{
   display: flex;
   justify-content:space-between;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 aside{
@@ -133,7 +140,6 @@ aside a{
 }
 /*Оснвной новостной блок*/
 article{
-  height: 100px;
   width: 450px;
 }
 .littleNew{
@@ -152,9 +158,11 @@ article{
 }
 /*Реклама*/
 .banners{
-  background-color: #000;
-  height: 100px;
   width: 250px;
+}
+.banners img{
+  width: 100%;
+  height: auto;
 }
 
 
@@ -210,4 +218,91 @@ footer nav{
 .dotInf p{
   color: #fff;
   font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .fix-contianer{
+    width: 90%;
+  }
+  main{
+    justify-content: center;
+  }
+  section{
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F9F9F9;
+  }
+  section img{
+    width: 100%;
+    height: auto;
+  }
+  .banners{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 794px) {
+  aside{
+    width: 400px;
+  }
+  header nav a{
+    width: 19%;
+    margin: 20px;
+  }
+  .znak{
+    display: none;
+  }
+  .footer1{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .naw, .info, .dotInf{
+    margin: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 659px) {
+  header nav a{
+    width: 24%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .banners{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  header nav a{
+    width: 30%;
+  }
+  .bigNew img{
+    width: 100%;
+    height: auto;
+  }
+  .littleNew{
+    justify-content: center;
+  }
+  .littleNewBlock{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .littleNewBlock img{
+    width: 100%;
+    height: auto;
+  }
+  .header1 input{
+    display: none;
+  }
+  .menu_icon{
+    display: block;
+  }
+  header nav{
+    display: none;
+  }
 }
